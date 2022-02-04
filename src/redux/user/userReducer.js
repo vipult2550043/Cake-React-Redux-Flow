@@ -11,7 +11,9 @@ const userReducer = (state=initial_state,action)=>{
         case FETCH_USER_REQ :
             return {
                 ...state,
-                loading : true
+                loading: true,
+                data: [],
+                err:''
             }
         case FETCH_USER_SUCCESS:
             return {

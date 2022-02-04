@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { buyCake, resetCake } from './redux/cake/cakeAction'
 
 function CakeContainer(props) {
-    
+   
     return (
         <div>
             <h3>No of cake:{props.noOfCake}</h3>

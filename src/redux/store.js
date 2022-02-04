@@ -5,12 +5,14 @@ import logger from "redux-logger";
 import { composeWithDevTools } from "redux-devtools-extension";
 import userReducer from './user/userReducer';
 import thunk from 'redux-thunk';
+import {chocoReducer} from './chocolate/ChocoReducer'
 
 const combineReducer = combineReducers(
     {
         cake: reducers,
         ice: IcecreamReducer,
-        user: userReducer
+        user: userReducer,
+        choco:chocoReducer
     }
 );
 
